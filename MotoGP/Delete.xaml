@@ -1,0 +1,16 @@
+﻿<Window x:Class="MotoGP.Delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MotoGP"
+        mc:Ignorable="d"
+        Title="Delete" Height="200" Width="300">
+    <Grid>
+        <Label x:Name="Areyousure_l" Content="Are you sure?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="274" Height="60" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="If you click YES, the team will be permanently deleted from the database." VerticalAlignment="Top" Width="274" Height="60" FontSize="14"/>
+        <Button x:Name="YES_btn" Content="YES" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="75" Click="YES_btn_Click"/>
+        <Button x:Name="NO_btn" Content="NO" HorizontalAlignment="Left" Margin="209,141,0,0" VerticalAlignment="Top" Width="75" Click="NO_btn_Click"/>
+
+    </Grid>
+</Window>

@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MotoGP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="Teams_dgw" HorizontalAlignment="Left" Height="422" Margin="10,100,0,0" VerticalAlignment="Top" Width="774" RenderTransformOrigin="0.502,0.498" SelectionMode="Single" IsReadOnly="True" HeadersVisibility="Column"/>
+        <Label x:Name="Title_l" Content="MotoGP Team Manager" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Height="85" Width="555" FontSize="36" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Image x:Name="LeftPic" HorizontalAlignment="Left" Height="85" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" Source="images/1200px-Moto_Gp_logo.svg.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="10"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="RightPic" HorizontalAlignment="Left" Height="85" Margin="680,10,10,10" VerticalAlignment="Top" Width="105" Source="images/MotoGP-2017-Phillip-Island-Rossi_17GP16_2172_AN-1.jpg" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="10"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="Add_btn" Content="Add new team" HorizontalAlignment="Left" Margin="10,530,0,0" VerticalAlignment="Top" Width="180" Click="Add_btn_Click"/>
+        <Button x:Name="Modify_btn" Content="Modify selected team" HorizontalAlignment="Left" Margin="195,530,0,0" VerticalAlignment="Top" Width="180" Click="Modify_btn_Click"/>
+        <Button x:Name="Delete_btn" Content="Delete selected team" HorizontalAlignment="Left" Margin="380,530,0,0" VerticalAlignment="Top" Width="180" Click="Delete_btn_Click"/>
+        <Button x:Name="News_btn" Content="NEWS" HorizontalAlignment="Left" Margin="604,530,0,0" VerticalAlignment="Top" Width="180" Click="News_btn_Click"/>
     </Grid>
 </Window>
